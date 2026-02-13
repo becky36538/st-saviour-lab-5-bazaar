@@ -1,8 +1,7 @@
 package main.java;
 
-public class Hi {
+public class Diagonal {
     public static void main(String[] args) {
-        System.out.println("new dawn, ew day");
         weave(diagonal(11, 11));
     }
     public static void weave(String[][] rug) {
