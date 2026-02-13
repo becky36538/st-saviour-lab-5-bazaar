@@ -1,6 +1,6 @@
 String[][] verticalRug = new String[11][11];
 for(int i = 0; i < 11; i++) {
     for(int j = 0; j < 11; j++) {
-        verticalRug[i][j] = (j % 2 == 0)
+        verticalRug[i][j] = (i + j % 3 == 0)
     }
 }
