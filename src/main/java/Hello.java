@@ -28,4 +28,21 @@ public class Hello {
         return rug;
     }
 
+     public static String[][] solid(int width, int height) {
+        String[][] rug = new String[width][height];
+
+        for(int i = 0; i < rug.length; i++) {
+            for(int j = 0; j < rug[i].length; j++) {
+                if (i % 2 == 0) {
+                    rug[i][j] = "🦋";
+                } else {
+                    rug[i][j] = "🪷";
+                }
+
+            }git
+        }
+
+        return rug;
+    }
+
 }
