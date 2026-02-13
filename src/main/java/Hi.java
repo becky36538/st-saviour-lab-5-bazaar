@@ -3,7 +3,7 @@ package main.java;
 public class Hi {
     public static void main(String[] args) {
         System.out.println("new dawn, ew day");
-        weave(vertical(11, 11));
+        weave(diagonal(11, 11));
     }
     public static void weave(String[][] rug) {
         // method to print 2d emooji arrays
@@ -16,15 +16,25 @@ public class Hi {
         }
     }
 
-    public static String[][] solid(int width, int height) {
+    public static String[][] diagonal(int width, int height) {
         String[][] rug = new String[width][height];
 
         for(int i = 0; i < rug.length; i++) {
             for(int j = 0; j < rug[i].length; j++) {
-                rug[i][j] = "🩷";
+                 if (i % 2 == 0 && j % 2 != 0) {
+                    rug[i][j] = "🪷";
+                } else if (i % 2 == 0 && j % 2 == 0){
+                    rug[i][j] = "🦋";
+                if (i % 2 != 0 && j % 2 == 0) {
+                    rug[i][j] = "🪷";
+                } else if (i % 2 != 0 && j % 2 != 0){
+                    rug[i][j] = "🦋";
             }
         }
 
         return rug;
+    }
+} return rug;
+
     }
 }
