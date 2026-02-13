@@ -1,7 +1,8 @@
-package main.java;
 
-public class Diagonal {
+
+public class Hey {
     public static void main(String[] args) {
+        System.out.println("new dawn, ew day");
         weave(diagonal(11, 11));
     }
     public static void weave(String[][] rug) {
@@ -20,20 +21,19 @@ public class Diagonal {
 
         for(int i = 0; i < rug.length; i++) {
             for(int j = 0; j < rug[i].length; j++) {
-                 if (i % 2 == 0 && j % 2 != 0) {
-                    rug[i][j] = "🪷";
-                } else if (i % 2 == 0 && j % 2 == 0){
-                    rug[i][j] = "🦋";
-                if (i % 2 != 0 && j % 2 == 0) {
-                    rug[i][j] = "🪷";
-                } else if (i % 2 != 0 && j % 2 != 0){
-                    rug[i][j] = "🦋";
+                if(i % 2 == 0 && j % 2 != 0) {
+                    rug[i][j] = "🩵";
+                } else if (i % 2 == 0 && j % 2 == 0) {
+                    rug[i][j] = "🤍";
+                }
+                if(i % 2 != 0 && j % 2 == 0) {
+                    rug[i][j] = "🩵";
+                } else if (i % 2 != 0 && j % 2 != 0) {
+                    rug[i][j] = "🤍";
+                }
             }
         }
 
         return rug;
-    }
-} return rug;
-
     }
 }
