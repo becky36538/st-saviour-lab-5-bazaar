@@ -23,7 +23,7 @@ public class Plaid {
             for(int j = 0; j < rug[i].length; j++) {
                 if (i % 2 == 0 && j % 2 == 0) {
                     rug[i][j] = "🪷";
-                } else {
+                } else { // if the row and column is even, then the 🪷 is printed, if not then the 🌸 is printed
                     rug[i][j] = "🌸";
                 }
             }
